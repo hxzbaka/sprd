@@ -17,7 +17,7 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-LOCAL_CFLAGS := -Wall -O2
+LOCAL_CFLAGS := -Wall -O2 -Werror
 
 ifeq ($(TARGET_DEVICE), sp9820e_1h10)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
