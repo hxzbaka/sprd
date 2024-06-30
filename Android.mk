@@ -17,7 +17,7 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-LOCAL_CFLAGS += -Wno-unused-result
+LOCAL_CFLAGS := -Wall -O2
 
 ifeq ($(TARGET_DEVICE), sp9820e_1h10)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
